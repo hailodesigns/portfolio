@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
+
+  *{
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      }
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  color: #000;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color:rgba(0,0,0,0.1); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eb9922;
+}
+
+
+.container {
+	margin: 0 auto;
+}
+
+.hailo{
+	color:#eb9922;
+}
+
+header {
+	display: block;
+	height: 100px;
+	margin-bottom: 30px;
+	width: 100%;
+	margin: 0 auto;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    background-color: #fff;
+}
+header.shrink {
+    height: 70px;
+}
+
+header.shrink nav.topnav{
+	padding: 20px 30px;
+}
+
+header img {
+	margin: 10px 0 0 60px;
+	float: left;
+	height: 80px;
+}
+
+header.shrink img  {
+	height:60px;
+}
+
+.topnav {
+	float: right;
+	width: 50%;
+	padding: 40px 30px;
+	font-size: 1.4em;
+	text-align: right;
+}
+
+nav a {
+	padding-left: 30px;
+	text-decoration: none;
+	color:#000;
+}
+
+span a {
+	text-decoration:none;
+	color:#000;
+	padding-left: 30px;
+}
+span a:hover,
+span a.current {
+	color:#eb9922;
+}
+
+nav a:hover,
+a.current {
+	color:#eb9922;
+}
+
+.portfolio a{
+	text-decoration:none;
+	color:#000;
+	padding-left: 30px;
+}
+
+.portfolio a:hover,
+.portfolio a.current{
+	color:#eb9922
+}
+
+.jumbotron {
+  background: url(../assets/jumbotron.png);
+  margin-top: 100px;
+  width: 100%;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+border: 1px solid rgba(0,0,0,0);
+}
+
+.typing {
+  font-size: 80px;
+  width: 7ch;
+  animation: typing 2s steps(7), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  margin-top: 160px;
+  margin-left: 80px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+img[src="assets/dots.svg"]{
+	height:50px;
+	width:100px;
+	position: relative;
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.about {
+	width: 70%;
+	margin: 0 auto;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+.about p {
+	margin-left: 50px;
+	max-width: 400px;
+}
+
+.about img {
+	margin-left: 60px;
+}
+
+hr {
+border: 1px solid #eb9922;
+width: 50%;
+opacity: 1;
+margin: 0 auto;
+}
+
+.portfolio {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.portfolio a {
+	font-size: 24px;
+}
+
+#content {
+	margin: 40px auto;
+	width: 80%;
+	margin-bottom: 300px;
+}
+
+.container .gallery {
+	width: 100%;
+  height: auto;
+}
+
+h1,h2,h3,header {
+overflow-y:hidden;
+
+}
+
+.services {
+	width: 80%;
+	margin: 30px auto;
+	margin-bottom: 100px;
+}
+
+.services img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 40px;
+}
+.services p {
+	max-width: 300px;
+	line-height: 1.6;
+	text-align: justify;
+	margin: 0 auto;
+}
+.btn {
+	width: 200px;
+	height:70px;
+position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  background-color: #000;
+  border: none;
+}
+.btn:hover{
+	background-color:#ccc;
+	color: #eb9922;
+}
+
+#sendMessageButton {
+	margin-top: 450px;
+	margin-bottom: 200px;
+}
+
+/*.modal-open{
+	padding: 8px 16px;
+	background: #000;
+	color: white;
+	border-radius: 4px;
+	outline: none;
+	border:none;
+	position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.modal {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba(0,0,0,0.5);
+	z-index: 5;
+	display:none;
+}
+
+.modal-content {
+	background: #fff;
+	margin-top: 100px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px 24px;
+	border-radius: 4px;
+	z-index:6;
+}
+
+.modal-header {
+	font-weight: 500;
+	padding: 10px 0;
+	font-size:26px;
+}
+
+.modal-header .modal-close {
+	float: right;
+	font-size: 20px;
+	background:#efefef;
+	border: 0;
+	outline: 0;
+	padding: 5px 8px;
+	border-radius: 50%;
+}
+
+.modal-body{
+	color:#7b7b7b;
+	padding: 15px 0;
+}
+
+.modal-footer{
+	padding: 15px 0;
+} */
+
+#contact{
+	width: 50%;
+	display: block;
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+form label {
+	padding: 15px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 600px){
+	.jumbotron{
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	.typing {
+  	font-size: 30px;
+  	  margin-top: 300px;
+  margin-left: 20px;
+  	}
+  	.header{
+  	height: 50px;
+  	margin-bottom: 0px;
+  	}
+	.hailo{
+	color: #000;
+	}
+	.topnav {
+		display: inline;
+		font-size: 20px;
+		float: none;
+		text-align: right;
+		margin-top: 10px;
+	}
+	.services p{
+		margin-bottom: 30px;
+	}
+	#contact {
+		width: 100%;
+	}
+	input {
+		width: 100px;
+	}
+	#sendMessageButton {
+	margin-top: 60px;
+	margin-bottom: 200px;
+}
+}
+
+input {
+	width:500px;
+	height: 50px;
+	padding: 15px 10px;
+}
