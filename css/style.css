@@ -146,10 +146,9 @@ img[src="assets/dots.svg"]{
 	height:50px;
 	width:100px;
 	position: relative;
-	margin-left: 50%;
-	margin-right: 50%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	left: 46.5vw;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .about {
@@ -193,6 +192,27 @@ margin: 0 auto;
 .container .gallery {
 	width: 100%;
   height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #eb9922;
+}
+
+.overlay-wrapper {
+	position: relative;
+}
+
+.overlay-wrapper:hover .overlay {
+	opacity: 1;
 }
 
 h1,h2,h3,header {
@@ -240,57 +260,6 @@ position: absolute;
 	margin-bottom: 200px;
 }
 
-/*.modal-open{
-	padding: 8px 16px;
-	background: #000;
-	color: white;
-	border-radius: 4px;
-	outline: none;
-	border:none;
-	position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-.modal {
-	position: fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	background: rgba(0,0,0,0.5);
-	z-index: 5;
-	display:none;
-}
-
-.modal-content {
-	background: #fff;
-	margin-top: 100px;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 8px 24px;
-	border-radius: 4px;
-	z-index:6;
-}
-
-.modal-header {
-	font-weight: 500;
-	padding: 10px 0;
-	font-size:26px;
-}
-
-.modal-header .modal-close {
-	float: right;
-	font-size: 20px;
-	background:#efefef;
-	border: 0;
-	outline: 0;
-	padding: 5px 8px;
-	border-radius: 50%;
-}
-
 .modal-body{
 	color:#7b7b7b;
 	padding: 15px 0;
@@ -318,23 +287,76 @@ form label {
 	padding: 15px 0px 0px 0px;
 }
 
-@media only screen and (max-width: 600px){
+/* About */
+
+.portrait {
+	height:300px; 
+	width: auto; 
+	border-radius: 50%;
+}
+
+/* Footer */
+
+.footer-info {
+	padding: 60px 0;
+	text-align: center;
+	margin-top: 120px;
+	/* border-top: 1px solid #e3e3e3; */
+}
+
+footer a {
+	font-size: 28px;
+	padding: 0 16px;
+}
+
+footer a, footer a:link {
+	text-decoration: none;
+	color: #777;
+}
+
+footer a:hover {
+	color:#eb9922;
+	transition: ease 0.5s;
+}
+
+
+@media only screen and (max-width: 1024px){
+
 	.jumbotron{
 		margin-top: 0px;
 		margin-bottom: 20px;
 	}
+
+	.about p {
+		margin-left: 0px;
+	}
+
+	.about img {
+		display: block;
+		margin: 0px auto;
+		height: 200px;
+	}
+
+	.portfolio a {
+		font-size: 20px;
+		padding-left: 10px;
+	}
+
 	.typing {
   	font-size: 30px;
   	  margin-top: 300px;
   margin-left: 20px;
   	}
+
   	.header{
   	height: 50px;
   	margin-bottom: 0px;
   	}
+
 	.hailo{
 	color: #000;
 	}
+
 	.topnav {
 		display: inline;
 		font-size: 20px;
@@ -342,19 +364,29 @@ form label {
 		text-align: right;
 		margin-top: 10px;
 	}
+
 	.services p{
 		margin-bottom: 30px;
 	}
+
 	#contact {
 		width: 100%;
 	}
+
 	input {
 		width: 100px;
 	}
+
 	#sendMessageButton {
 	margin-top: 60px;
 	margin-bottom: 200px;
 }
+
+img[src="assets/dots.svg"]{
+	position: relative;
+	left: 39vw;
+}
+
 }
 
 input {
