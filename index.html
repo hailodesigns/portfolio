@@ -11,7 +11,7 @@
    
 <!--NAVIGATION-->
       <header>
-         <img src="assets/navlogo.svg" />
+         <img src="assets/navlogo.svg" class="nav-logo"/>
          <nav class=topnav>
             <a href="#about">About</a>
             <a href="#works">Portfolio</a>
@@ -91,20 +91,26 @@
 <img  src="assets/dots.svg"/>
 
 <!--CONTACT-->
-	<div class="container" id="contact">
-		<h1 class="text-center">Tell me your cool ideas!</h1>
-			<div class="col-md-12" class="form">
-				<form>
-				  <label for="name">First name:</label><br>
-  				  <input type="text" id="name" name="name"><br>
-  				  <label for="email">Email:</label><br>
-  				  <input type="email" id="email" name="email"><br>
-  				  <label for="message">Your cool idea:</label><br>
-  				  <input type="text" id="message" name="message" style="height: 200px;"><br>
-				</form>
-				<button id="sendMessageButton" class="btn btn-primary btn-xl" type="submit">&#9900;   Send   &#9900;</button>
-			</div>
-	</div>
+<div id='wrapper'>
+	<form action="https://formsubmit.co/hail@hailodesigns.com" method="POST" class='form'>
+	  <p class='field required half'>
+		<label class='label required' for='name'>Name</label>
+		<input class='text-input' id='name' name='name' required type='text'>
+	  </p>
+	  <p class='field required half'>
+		<label class='label' for='email'>E-mail</label>
+		<input class='text-input' id='email' name='email' required type='email'>
+	  </p>
+	  <p class='field'>
+		<label class='label' for='message'>Message</label>
+		<textarea class='textarea' cols='50' id='message' name='textarea' required rows='4'></textarea>
+	  </p>
+	  <p class='field'>
+		<input class='button' type='submit' target="_blank" value='Send message'>
+	  </p>
+	</form>
+  </div>
+  
 
 	<!-- Footer -->
 <footer>
@@ -121,6 +127,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/htmldata.js"></script>
 	<script src="js/modal.js"></script>
+	<script src="js/contact.js"></script>
 
 </body>
 </html>
